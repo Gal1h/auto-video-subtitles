@@ -1,0 +1,33 @@
+node_modules/
+.env
+uploads/*
+outputs/*
+temp/*
+!uploads/.gitkeep
+!outputs/.gitkeep
+!temp/.gitkeep
+models/*.bin
+
+# Environment lokal
+.env.*
+!.env.example
+
+# Log dan laporan debug package manager
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Model Whisper besar lainnya
+models/*.ggml
+models/*.gguf
+models/*.model
+
+# Editor dan sistem operasi
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
