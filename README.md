@@ -1,6 +1,6 @@
-# Auto Clipper
+# Auto Subtitles
 
-Auto Clipper is a local application for automatically creating subtitles from videos. Videos are processed on your own computer: audio is extracted with **FFmpeg**, transcribed by **Whisper.cpp**, and Shorts-style subtitles are burned into the resulting video.
+Auto Subtitles is a local application for automatically creating subtitles from videos. Videos are processed on your own computer: audio is extracted with **FFmpeg**, transcribed by **Whisper.cpp**, and Shorts-style subtitles are burned into the resulting video.
 
 No cloud service is required. Uploaded video files are temporarily stored in `uploads/`, intermediate files are created in `temp/`, and the resulting videos are written to `outputs/`. Input and temporary files are deleted after the job is complete.
 
@@ -52,8 +52,8 @@ Install Node.js 18 or newer using a version manager such as `nvm`, or through yo
 ### 2. Set up the project
 
 ```bash
-git clone <URL_REPOSITORY> auto-clipper
-cd auto-clipper
+git clone <URL_REPOSITORY> auto-subtitles
+cd auto-subtitles
 npm ci
 mkdir -p models uploads outputs temp
 ```
@@ -104,7 +104,7 @@ Open `http://localhost:3000` in your browser.
 The project commands are the same, but temporary environment settings use Fish syntax:
 
 ```fish
-cd /path/to/auto-clipper
+cd /path/to/auto-subtitles
 npm ci
 mkdir -p models uploads outputs temp
 ```
@@ -154,8 +154,8 @@ If the binary is named `whisper-cli.exe`, that name can be used in the configura
 ### 2. Set up the project with PowerShell
 
 ```powershell
-git clone <URL_REPOSITORY> auto-clipper
-Set-Location .\auto-clipper
+git clone <URL_REPOSITORY> auto-subtitles
+Set-Location .\auto-subtitles
 npm ci
 New-Item -ItemType Directory -Force models, uploads, outputs, temp
 ```
@@ -197,7 +197,7 @@ Open `http://localhost:3000`.
 If you are using Command Prompt, the basic commands are:
 
 ```bat
-cd /d C:\path\to\auto-clipper
+cd /d C:\path\to\auto-subtitles
 npm ci
 if not exist models mkdir models
 if not exist uploads mkdir uploads
@@ -228,7 +228,7 @@ npm start
 Example minimal structure:
 
 ```text
-auto-clipper/
+auto-subtitles/
 ├── models/
 │   └── ggml-base.bin
 ├── outputs/
